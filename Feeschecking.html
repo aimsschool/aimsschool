@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Fees Checker</title>
+    <link rel="stylesheet" href="Feeschecking.css">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #studentInfo { margin-top: 20px; }
+    </style>
+</head>
+<body>
+     <!-- Top Contact Info Bar -->
+     <div class="header-top">
+        <p>Contact us: 0320-8442233, 051 2722123-124 | Email: itadmin@aimspakistan.edu.pk</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            <img src="AMIS.png" alt="AIMS Logo"> <!-- Replace with your logo path -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="lading.html">Home</a></li>
+                <li><a href="">Pay Fees Online</a></li>
+                <li><a href="onlineresultchecking.html">Online Result Checking</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="OnlineAdmission.html">Online Admission</a></li>
+                <li><a href="Feeschecking.html">Fees Checking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Check Student Fees</h1>
+    
+    <label for="trackingNumber">Enter Tracking Number:</label>
+    <input type="text" id="trackingNumber" required>
+    
+    <label for="grade">Select Grade:</label>
+    <select id="grade" required>
+        <option value="">--Select--</option>
+        <option value="1st Grade">1st Grade</option>
+        <option value="2nd Grade">2nd Grade</option>
+        <option value="3rd Grade">3rd Grade</option>
+        <option value="4th Grade">4th Grade</option>
+        <option value="5th Grade">5th Grade</option>
+        <option value="6th Grade">6th Grade</option>
+        <option value="7th Grade">7th Grade</option>
+        <option value="8th Grade">8th Grade</option>
+        <option value="9th Grade">9th Grade</option>
+        <option value="10th Grade">10th Grade</option>
+        <option value="1st Year">1st Year</option>
+        <option value="2nd Year">2nd Year</option>
+    </select>
+    
+    <button onclick="searchStudent()">Check Fees</button>
+    
+    <div id="studentInfo" style="display: none;">
+        <h2>Student Information</h2>
+        <img id="studentPhoto" src="" alt="Student Photo" />
+        <p id="displayName"></p>
+        <p id="displayFatherName"></p>
+        <p id="displayMonthlyFee"></p>
+        <p id="displayRemainingFee"></p>
+        <div id="downloadResult"></div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo and Social Icons -->
+            <div class="footer-section logo-section">
+                <img src="your-logo.png" alt="AIMS Education System Logo" class="footer-logo">
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+    
+            <!-- Useful Links -->
+            <div class="footer-section useful-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Admission Form</a></li>
+                    <li><a href="#">AES Fee Structure</a></li>
+                    <li><a href="#">AIMS Portal</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Life at AES</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Information -->
+            <div class="footer-section information">
+                <h3>Information</h3>
+                <p>Street 04, H-8/1, Islamabad</p>
+                <p>0320-844 22 33</p>
+                <p>051 27 22 123-124</p>
+                <p><a href="mailto:itadmin@aimspakistan.edu.pk">itadmin@aimspakistan.edu.pk</a></p>
+            </div>
+    
+            <!-- Find Us (Map Section) -->
+            <div class="footer-section find-us">
+                <h3>Find Us</h3>
+                <iframe src="your-google-map-url" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    
+        <!-- Bottom Copyright -->
+        <div class="footer-bottom">
+            <p>© 2023 AIMS Education System. Developed by <a href="#">AIMS Soft</a></p>
+        </div>
+    </footer>
+    
+
+    <script src="Feeschecking.js"></script>
+</body>
+</html>

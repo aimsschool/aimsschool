@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="OnlineAdmission.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+     <!-- Top Contact Info Bar -->
+     <div class="header-top">
+        <p>Contact us: 0320-8442233, 051 2722123-124 | Email: itadmin@aimspakistan.edu.pk</p>
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="AMIS.png" alt="AIMS Logo"> <!-- Replace with your logo path -->
+        </div>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="lading.html">Home</a></li>
+                <li><a href="#">Pay Fees Online</a></li>
+                <li><a href="onlineresultchecking.html">Online Result Checking</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="OnlineAdmission.html">Online Admission</a></li>
+                <li><a href="Feeschecking.html">Fees Checking</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form id="admissionForm">
+        <label for="studentName">Name of Student:</label>
+        <input type="text" id="studentName" name="studentName" required><br><br>
+
+        <label for="fatherName">Father's or Guardian's Name:</label>
+        <input type="text" id="fatherName" name="fatherName" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="class">Admission to Class:</label>
+        <select id="class" name="class" onchange="checkClassSelection()" required>
+            <option value="">-- Select Class --</option>
+            <option value="Playgroup">Playgroup (Fees: 2000)</option>
+            <option value="Nursery">Nursery (Fees: 2500)</option>
+            <option value="Prep">Prep (Fees: 3000)</option>
+            <option value="1st">1st Class (Fees: 3500)</option>
+            <option value="2nd">2nd Class (Fees: 3500)</option>
+            <option value="3rd">3rd Class (Fees: 3600)</option>
+            <option value="4th">4th Class (Fees: 3700)</option>
+            <option value="5th">5th Class (Fees: 3800)</option>
+            <option value="6th">6th Class (Fees: 3900)</option>
+            <option value="7th">7th Class (Fees: 4000)</option>
+            <option value="8th">8th Class (Fees: 4100)</option>
+            <option value="9th">9th Class (Fees: 4200)</option>
+            <option value="10th">10th Class (Fees: 4300)</option>
+            <option value="1stYear">1st Year (Fees: 5000)</option>
+            <option value="2ndYear">2nd Year (Fees: 5500)</option>
+        </select><br><br>
+
+        <div id="specializationField" style="display:none;">
+            <label for="specialization">Specialization:</label>
+            <select id="specialization" name="specialization">
+                <option value="">-- Select Specialization --</option>
+                <option value="Medical">Medical</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Computer Science">Computer Science</option>
+            </select><br><br>
+        </div>
+
+        <label for="campus">Admission to Campus:</label>
+        <select id="campus" name="campus" required>
+            <option value="baw">-- Select School --</option>
+            <option value="AIMS College FCS Campus">AIMS College FCS Campus</option>
+            <option value="AIMS College Sakhkot">AIMS College Sakhkot</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo and Social Icons -->
+            <div class="footer-section logo-section">
+                <img src="your-logo.png" alt="AIMS Education System Logo" class="footer-logo">
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+    
+            <!-- Useful Links -->
+            <div class="footer-section useful-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Admission Form</a></li>
+                    <li><a href="#">AES Fee Structure</a></li>
+                    <li><a href="#">AIMS Portal</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Life at AES</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Information -->
+            <div class="footer-section information">
+                <h3>Information</h3>
+                <p>Street 04, H-8/1, Islamabad</p>
+                <p>0320-844 22 33</p>
+                <p>051 27 22 123-124</p>
+                <p><a href="mailto:itadmin@aimspakistan.edu.pk">itadmin@aimspakistan.edu.pk</a></p>
+            </div>
+    
+            <!-- Find Us (Map Section) -->
+            <div class="footer-section find-us">
+                <h3>Find Us</h3>
+                <iframe src="your-google-map-url" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    
+        <!-- Bottom Copyright -->
+        <div class="footer-bottom">
+            <p>© 2023 AIMS Education System. Developed by <a href="#">AIMS Soft</a></p>
+        </div>
+    </footer>
+    
+
+    <script src="OnlineAdmission.js"></script> <!-- Link to the JS file -->
+</body>
+</html>

@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Top Bar */
+.header-top {
+    background-color: #161616; /* Dark blue background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px; /* Smaller font size */
+}
+
+.header-top p {
+    margin: 0;
+}
+
+/* Header / Navigation Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366;
+    padding: 15px 30px;
+}
+
+.logo img {
+    max-width: 150px; /* Adjust the size of the logo */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffc107; /* Highlight color on hover */
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+#studentInfo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#studentPhoto {
+    max-width: 100px;
+    border-radius: 50%;
+}
+/* Footer Styling */
+.footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Logo Section */
+.logo-section .footer-logo {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ffc107;
+}
+
+/* Useful Links */
+.useful-links h3, .information h3, .find-us h3 {
+    margin-bottom: 15px;
+}
+
+.useful-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.useful-links ul li {
+    margin-bottom: 10px;
+}
+
+.useful-links ul li a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.useful-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Information Section */
+.information p {
+    margin-bottom: 10px;
+}
+
+.information a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+/* Find Us Section */
+.find-us iframe {
+    border-radius: 8px;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #fff;
+    color: #ccc;
+}
+
+.footer-bottom a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
